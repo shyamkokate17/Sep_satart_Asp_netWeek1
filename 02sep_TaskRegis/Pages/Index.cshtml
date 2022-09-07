@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<html>
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<head>
+    <link rel="stylesheet" href="~/js/site.js">
+</head>
+<body>
+    
+    <div class="container">
+     
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+
+                       <div class="input-field">
+                        <input type="text" placeholder="Enter username" id="username" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" id="email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" id= "pass" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" id="repass" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                    <input type="button" value="Submit" class="btn" onclick="validation()">
+                    </div>
+                </form>
+                
+            </div>
+      
+    </div>
+
+ 
+</body>
+</html>
